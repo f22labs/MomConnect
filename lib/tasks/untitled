@@ -1,0 +1,7 @@
+namespace :cron do
+  task :send_tips => :environment do
+    ListComment.all.group(:list_id).select("list_id, count(*) as count").each do |x|
+      $redis.set("comment_list_#{x.list_id}", x.count)
+    end
+  end
+end
