@@ -12,3 +12,9 @@ default: &default
 development:
   <<: *default
   database: mom_connec_india_dev
+
+production:
+  adapter: mysql2
+  database: mom_connec_india
+  pool: 5
+  timeout: 5000
