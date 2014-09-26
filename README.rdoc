@@ -1,3 +1,4 @@
 == README
 
 A #mHealth initiative that sends health tips as SMS to expecting and new moms.
+Along the lines of http://www.praekeltfoundation.org/mom-connect.html for India
