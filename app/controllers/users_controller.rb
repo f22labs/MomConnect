@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
 
   def create
     user_params[:user][:date] = Time.at(user_params[:user][:date]).to_i

@@ -1,4 +1,4 @@
-class TipController < ApplicationController
+class TipsController < ApplicationController
 
   def create
     # when is in days
