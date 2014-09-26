@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140926185719) do
+ActiveRecord::Schema.define(version: 20140926205515) do
+
+  create_table "tip_locales", force: true do |t|
+    t.integer "tip_id"
+    t.integer "locale_id"
+    t.string  "what"
+  end
 
   create_table "tips", force: true do |t|
     t.string  "what"
@@ -23,6 +29,7 @@ ActiveRecord::Schema.define(version: 20140926185719) do
     t.integer  "conception_timestamp"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "locale_id"
   end
 
 end

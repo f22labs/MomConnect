@@ -8,6 +8,6 @@ class UserController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:phone, :date)
+    params.require(:user).permit(:phone, :date, :locale_id)
   end
 end
