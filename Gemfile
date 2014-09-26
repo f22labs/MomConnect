@@ -24,3 +24,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'plivo'
 gem 'rails_admin'
+gem 'unicorn'
