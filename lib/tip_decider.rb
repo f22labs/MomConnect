@@ -5,6 +5,7 @@ class TipDecider
   end
 
   def moms
-    User.where(:conception_timestamp => (Time.now - days).to_i).all
+    curr_time = Time.now
+    User.where(:conception_timestamp => (Time.new(curr_time.year, curr_time.month, curr_time.day) - days.days).to_i).all
   end
 end
